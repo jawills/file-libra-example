@@ -4,7 +4,7 @@
   "description": "This template quickstarts the ability of onboarding a new Salesforce org. Quickly get started and enable:",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scan": "sf code-analyzer run --rule-selector Recommended --rule-selector AppExchange --output-file analyzer/code-analyzer-results.json --output-file analyzer/code-analyzer-report.html --target force-app/main/default"
   },
   "author": "",
   "license": "ISC",
