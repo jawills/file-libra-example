@@ -8,10 +8,8 @@ public with sharing class ApexLibraExample {
     ];
   }
 
-  private static Map<String, Contact> getContactsByEmailsList(
-    Set<String> emails
-  ) {
-    return new ContactQuery.byEmails(emails).asUser().getList();
+  private static List<Contact> getContactsByEmailsList(Set<String> emails) {
+    return (List<Contact>) new ContactQuery.byEmails(emails).asUser().getList();
   }
 
   private static Map<String, Contact> getContactsByEmails(Set<String> emails) {
@@ -28,5 +26,13 @@ public with sharing class ApexLibraExample {
       conMapByEmail.put(c.Email, c);
     }
     return conMapByEmail;
+  }
+
+  private static Map<String, Contact> getContactsByEmailsList(
+    Set<String> emails
+  ) {
+    return (Map<String, Contact>) new ContactQuery.byEmails(emails)
+      .asUser()
+      .getMapByField(Contact.Email);
   }
 }
