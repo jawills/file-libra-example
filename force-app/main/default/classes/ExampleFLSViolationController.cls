@@ -3,11 +3,12 @@ public with sharing class ExampleFLSViolationController {
   public static string getRecordName(Id recordId, String objectAPIName) {
     try {
       // Using WITH USER_MODE when building dynamic SOQL
+      // Prevent SOQL Injection
       String soql =
         'SELECT Id, Name FROM ' +
-        objectAPIName +
+        String.escapeSingleQuotes(objectAPIName) +
         ' WHERE Id = \'' +
-        recordId +
+        String.escapeSingleQuotes(recordId) +
         '\' WITH USER_MODE ';
       SObject record = Database.query(soql);
       return (String) record.get('Name');

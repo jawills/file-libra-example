@@ -1,0 +1,379 @@
+{
+  "runDir": "/home/jawills/Documents/projects/file-libra-example/",
+  "violationCounts": {
+    "total": 15,
+    "sev1": 0,
+    "sev2": 0,
+    "sev3": 0,
+    "sev4": 15,
+    "sev5": 0
+  },
+  "versions": {
+    "code-analyzer": "0.30.0",
+    "regex": "0.23.0",
+    "cpd": "0.26.1",
+    "pmd": "0.26.1"
+  },
+  "violations": [
+    {
+      "rule": "ApexDoc",
+      "engine": "pmd",
+      "severity": 4,
+      "tags": [
+        "Recommended",
+        "Documentation",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ApexLibraExample.cls",
+          "startLine": 1,
+          "startColumn": 21,
+          "endLine": 38,
+          "endColumn": 2
+        }
+      ],
+      "message": "Missing ApexDoc comment",
+      "resources": [
+        "https://docs.pmd-code.org/pmd-doc-7.14.0/pmd_rules_apex_documentation.html#apexdoc"
+      ]
+    },
+    {
+      "rule": "ApexDoc",
+      "engine": "pmd",
+      "severity": 4,
+      "tags": [
+        "Recommended",
+        "Documentation",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ContactQuery.cls",
+          "startLine": 1,
+          "startColumn": 21,
+          "endLine": 9,
+          "endColumn": 2
+        }
+      ],
+      "message": "Missing ApexDoc comment",
+      "resources": [
+        "https://docs.pmd-code.org/pmd-doc-7.14.0/pmd_rules_apex_documentation.html#apexdoc"
+      ]
+    },
+    {
+      "rule": "ApexDoc",
+      "engine": "pmd",
+      "severity": 4,
+      "tags": [
+        "Recommended",
+        "Documentation",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ContactQuery.cls",
+          "startLine": 2,
+          "startColumn": 10,
+          "endLine": 4,
+          "endColumn": 4
+        }
+      ],
+      "message": "Missing ApexDoc comment",
+      "resources": [
+        "https://docs.pmd-code.org/pmd-doc-7.14.0/pmd_rules_apex_documentation.html#apexdoc"
+      ]
+    },
+    {
+      "rule": "ApexDoc",
+      "engine": "pmd",
+      "severity": 4,
+      "tags": [
+        "Recommended",
+        "Documentation",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ContactQuery.cls",
+          "startLine": 6,
+          "startColumn": 10,
+          "endLine": 8,
+          "endColumn": 4
+        }
+      ],
+      "message": "Missing ApexDoc comment",
+      "resources": [
+        "https://docs.pmd-code.org/pmd-doc-7.14.0/pmd_rules_apex_documentation.html#apexdoc"
+      ]
+    },
+    {
+      "rule": "ApexDoc",
+      "engine": "pmd",
+      "severity": 4,
+      "tags": [
+        "Recommended",
+        "Documentation",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ExampleController.cls",
+          "startLine": 1,
+          "startColumn": 21,
+          "endLine": 19,
+          "endColumn": 2
+        }
+      ],
+      "message": "Missing ApexDoc comment",
+      "resources": [
+        "https://docs.pmd-code.org/pmd-doc-7.14.0/pmd_rules_apex_documentation.html#apexdoc"
+      ]
+    },
+    {
+      "rule": "ApexDoc",
+      "engine": "pmd",
+      "severity": 4,
+      "tags": [
+        "Recommended",
+        "Documentation",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ExampleController.cls",
+          "startLine": 3,
+          "startColumn": 17,
+          "endLine": 18,
+          "endColumn": 4
+        }
+      ],
+      "message": "Missing ApexDoc comment",
+      "resources": [
+        "https://docs.pmd-code.org/pmd-doc-7.14.0/pmd_rules_apex_documentation.html#apexdoc"
+      ]
+    },
+    {
+      "rule": "AvoidDebugStatements",
+      "engine": "pmd",
+      "severity": 4,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ExampleController.cls",
+          "startLine": 15,
+          "startColumn": 7,
+          "endLine": 15,
+          "endColumn": 22
+        }
+      ],
+      "message": "Avoid debug statements since they impact on performance",
+      "resources": [
+        "https://docs.pmd-code.org/pmd-doc-7.14.0/pmd_rules_apex_performance.html#avoiddebugstatements"
+      ]
+    },
+    {
+      "rule": "DebugsShouldUseLoggingLevel",
+      "engine": "pmd",
+      "severity": 4,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ExampleController.cls",
+          "startLine": 15,
+          "startColumn": 7,
+          "endLine": 15,
+          "endColumn": 22
+        }
+      ],
+      "message": "Calls to System.debug should specify a logging level.",
+      "resources": [
+        "https://docs.pmd-code.org/pmd-doc-7.14.0/pmd_rules_apex_bestpractices.html#debugsshoulduselogginglevel"
+      ]
+    },
+    {
+      "rule": "ApexDoc",
+      "engine": "pmd",
+      "severity": 4,
+      "tags": [
+        "Recommended",
+        "Documentation",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ExampleFLSViolationController.cls",
+          "startLine": 1,
+          "startColumn": 21,
+          "endLine": 20,
+          "endColumn": 2
+        }
+      ],
+      "message": "Missing ApexDoc comment",
+      "resources": [
+        "https://docs.pmd-code.org/pmd-doc-7.14.0/pmd_rules_apex_documentation.html#apexdoc"
+      ]
+    },
+    {
+      "rule": "ApexDoc",
+      "engine": "pmd",
+      "severity": 4,
+      "tags": [
+        "Recommended",
+        "Documentation",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ExampleFLSViolationController.cls",
+          "startLine": 3,
+          "startColumn": 17,
+          "endLine": 19,
+          "endColumn": 4
+        }
+      ],
+      "message": "Missing ApexDoc comment",
+      "resources": [
+        "https://docs.pmd-code.org/pmd-doc-7.14.0/pmd_rules_apex_documentation.html#apexdoc"
+      ]
+    },
+    {
+      "rule": "AvoidDebugStatements",
+      "engine": "pmd",
+      "severity": 4,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ExampleFLSViolationController.cls",
+          "startLine": 16,
+          "startColumn": 7,
+          "endLine": 16,
+          "endColumn": 22
+        }
+      ],
+      "message": "Avoid debug statements since they impact on performance",
+      "resources": [
+        "https://docs.pmd-code.org/pmd-doc-7.14.0/pmd_rules_apex_performance.html#avoiddebugstatements"
+      ]
+    },
+    {
+      "rule": "DebugsShouldUseLoggingLevel",
+      "engine": "pmd",
+      "severity": 4,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ExampleFLSViolationController.cls",
+          "startLine": 16,
+          "startColumn": 7,
+          "endLine": 16,
+          "endColumn": 22
+        }
+      ],
+      "message": "Calls to System.debug should specify a logging level.",
+      "resources": [
+        "https://docs.pmd-code.org/pmd-doc-7.14.0/pmd_rules_apex_bestpractices.html#debugsshoulduselogginglevel"
+      ]
+    },
+    {
+      "rule": "ApexDoc",
+      "engine": "pmd",
+      "severity": 4,
+      "tags": [
+        "Recommended",
+        "Documentation",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/FLSExample.cls",
+          "startLine": 1,
+          "startColumn": 21,
+          "endLine": 25,
+          "endColumn": 2
+        }
+      ],
+      "message": "Missing ApexDoc comment",
+      "resources": [
+        "https://docs.pmd-code.org/pmd-doc-7.14.0/pmd_rules_apex_documentation.html#apexdoc"
+      ]
+    },
+    {
+      "rule": "AvoidDebugStatements",
+      "engine": "pmd",
+      "severity": 4,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/FLSExample.cls",
+          "startLine": 12,
+          "startColumn": 7,
+          "endLine": 12,
+          "endColumn": 22
+        }
+      ],
+      "message": "Avoid debug statements since they impact on performance",
+      "resources": [
+        "https://docs.pmd-code.org/pmd-doc-7.14.0/pmd_rules_apex_performance.html#avoiddebugstatements"
+      ]
+    },
+    {
+      "rule": "DebugsShouldUseLoggingLevel",
+      "engine": "pmd",
+      "severity": 4,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/FLSExample.cls",
+          "startLine": 12,
+          "startColumn": 7,
+          "endLine": 12,
+          "endColumn": 22
+        }
+      ],
+      "message": "Calls to System.debug should specify a logging level.",
+      "resources": [
+        "https://docs.pmd-code.org/pmd-doc-7.14.0/pmd_rules_apex_bestpractices.html#debugsshoulduselogginglevel"
+      ]
+    }
+  ]
+}
