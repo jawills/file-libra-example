@@ -10,6 +10,7 @@ Some sample processes to pass the AppExchange Security Review. These were some o
 ## FLS
 
 [Enforce FLS](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_perms_enforcing.htm)
+[Strip Inaccessible](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_with_security_stripInaccessible.htm)
 
 ## Apex Libra
 
